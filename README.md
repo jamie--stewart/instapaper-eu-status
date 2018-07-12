@@ -1,4 +1,4 @@
-#Instapaper Status 
+# Instapaper Status 
 
 > Check if Instapaper is _still_ down, and report this to Pushover 
 
