@@ -2,12 +2,15 @@ import requests
 import arrow
 from dateutil import tz
 from pushover import Client
+from os.path import dirname, realpath, join
 
+CWD = dirname(realpath(__file__))
 GDPR_MESSAGE = 'Instapaper is temporarily unavailable for residents in Europe'
 
 def send_pushover_notification(message):
     print ('Sending Pushover notification')
-    Client(config_path='./pushoverrc').send_message(message, title="Instapaper status:")
+    config_path = join(CWD, 'pushoverrc')
+    Client(config_path=config_path).send_message(message, title="Instapaper status:")
 
 def instapaper_page_has_gdpr_message():
     request = requests.get('https://www.instapaper.com/')
