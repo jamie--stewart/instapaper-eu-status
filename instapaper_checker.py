@@ -29,7 +29,7 @@ def check_instapaper_status():
     if (instapaper_page_has_gdpr_message()):
         message = 'Instapaper is STILL is not up for EU users. GDPR came in {} days ago...'.format(days_since_gdpr)
     else:
-        message = 'Instapaper is back up! After a mere {} days...'.format()
+        message = 'Instapaper is back up! After a mere {} days...'.format(days_since_gdpr)
 
     send_pushover_notification(message)
 
