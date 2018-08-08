@@ -1,5 +1,7 @@
 # Instapaper Status 
 
+**Update (07/08/2018):** Thankfully this is [now redundant](http://blog.instapaper.com/post/176732408411)!! Only 75 days... 
+
 > Check if Instapaper is _still_ down, and report this to Pushover 
 
 I'm getting sick of checking if Instapaper is back online for us in the EU. This simple utility will tell me every day if I can use it again. Bets on how big this number gets?
